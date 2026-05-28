@@ -1,267 +1,467 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Müller – Portfolio</title>
+  <title>Pobreza Infantil en América Latina – Centro de Información</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- NAVEGACIÓN -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a class="nav-logo" href="#hero">AM</a>
-      <ul class="nav-links">
-        <li><a href="#about">Über mich</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projekte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
+      <a class="nav-logo" href="#inicio">🌎 PobrezaAL</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#cifras">Cifras</a></li>
+        <li><a href="#paises">Países</a></li>
+        <li><a href="#gobiernos">Gobiernos</a></li>
+        <li><a href="#juego">🎮 Juego</a></li>
+        <li><a href="#ciclo">Infografía</a></li>
+        <li><a href="#progreso">Esperanza</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-number" aria-hidden="true">76M</div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Hallo, ich bin</p>
-      <h1 class="hero-name">Alex Müller</h1>
-      <h2 class="hero-role">Full-Stack Entwickler &amp; UI-Designer</h2>
-      <p class="hero-desc">Ich baue moderne Web-Anwendungen, die Menschen wirklich begeistern — von der Idee bis zum fertigen Produkt.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">Projekte ansehen</a>
-        <a class="btn btn-ghost" href="#contact">Kontakt aufnehmen</a>
+      <div class="hero-badge">🚨 INFORME 2024 · UNICEF &amp; CEPAL</div>
+      <h1 class="hero-title">La Crisis Invisible</h1>
+      <h2 class="hero-sub">Pobreza Infantil en<br><span class="highlight">América Latina</span></h2>
+      <p class="hero-desc">Cada 5 minutos, un niño latinoamericano muere por causas relacionadas con la pobreza. Este centro de información reúne datos, programas y conocimiento — porque entender el problema es el primer paso para cambiarlo.</p>
+      <div class="hero-bigstat">
+        <div class="bigstat-num">76<span>M</span></div>
+        <div class="bigstat-label">de niños viven en pobreza<br>en América Latina y el Caribe</div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#cifras">Ver Cifras Clave</a>
+        <a class="btn btn-ghost" href="#juego">🎮 Jugar y Aprender</a>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="avatar">
-        <div class="avatar-ring"></div>
-        <div class="avatar-img">AM</div>
-      </div>
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
+    <div class="hero-flags" aria-hidden="true">
+      <span>🇧🇷</span><span>🇲🇽</span><span>🇨🇴</span><span>🇵🇪</span>
+      <span>🇦🇷</span><span>🇨🇱</span><span>🇧🇴</span><span>🇬🇹</span>
+      <span>🇭🇳</span><span>🇪🇨</span><span>🇵🇾</span><span>🇺🇾</span>
     </div>
-    <a class="scroll-hint" href="#about" aria-label="Nach unten scrollen">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <a class="scroll-down" href="#cifras" aria-label="Desplazar hacia abajo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
     </a>
   </section>
 
-  <!-- About -->
-  <section class="section" id="about">
+  <!-- CIFRAS CLAVE -->
+  <section class="section" id="cifras">
     <div class="container">
-      <span class="section-tag">Über mich</span>
-      <h2 class="section-title">Wer steckt dahinter?</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Ich bin ein leidenschaftlicher Entwickler mit über 5 Jahren Erfahrung in der Webentwicklung. Mein Fokus liegt auf sauberen, wartbaren Code-Architekturen und intuitiven User Interfaces.</p>
-          <p>Wenn ich nicht gerade Code schreibe, bin ich beim Klettern, lese über Designtheorie oder experimentiere mit neuen Technologien.</p>
-          <div class="about-stats">
-            <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projekte</span></div>
-            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Jahre Erfahrung</span></div>
-            <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Zufriedene Kunden</span></div>
-          </div>
+      <span class="tag">Cifras que Impactan</span>
+      <h2 class="section-title">La Realidad en Números</h2>
+      <div class="stats-grid">
+        <div class="stat-card" data-count="76" data-suffix="M">
+          <div class="stat-emoji">🧒</div>
+          <div class="stat-num"><span class="counter">0</span>M</div>
+          <div class="stat-name">en situación de pobreza</div>
+          <div class="stat-detail">en toda América Latina y el Caribe</div>
         </div>
-        <div class="about-card">
-          <div class="timeline">
-            <div class="tl-item">
-              <div class="tl-dot"></div>
-              <div class="tl-body">
-                <p class="tl-year">2022 – heute</p>
-                <p class="tl-role">Senior Developer @ TechVentures GmbH</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot"></div>
-              <div class="tl-body">
-                <p class="tl-year">2019 – 2022</p>
-                <p class="tl-role">Frontend Engineer @ Creativ Studio</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot"></div>
-              <div class="tl-body">
-                <p class="tl-year">2015 – 2019</p>
-                <p class="tl-role">B.Sc. Informatik, TU Berlin</p>
-              </div>
-            </div>
-          </div>
+        <div class="stat-card urgent" data-count="16" data-suffix="M">
+          <div class="stat-emoji">🍽️</div>
+          <div class="stat-num"><span class="counter">0</span>M</div>
+          <div class="stat-name">en pobreza extrema</div>
+          <div class="stat-detail">sin acceso a alimentación mínima</div>
+        </div>
+        <div class="stat-card" data-count="4" data-suffix="M">
+          <div class="stat-emoji">📚</div>
+          <div class="stat-num"><span class="counter">0</span>M</div>
+          <div class="stat-name">fuera de la escuela</div>
+          <div class="stat-detail">sin acceso a educación primaria</div>
+        </div>
+        <div class="stat-card urgent" data-count="23" data-suffix="M">
+          <div class="stat-emoji">💧</div>
+          <div class="stat-num"><span class="counter">0</span>M</div>
+          <div class="stat-name">sin agua potable</div>
+          <div class="stat-detail">en zonas rurales y periurbanas</div>
+        </div>
+        <div class="stat-card" data-count="5" data-suffix=".5M" data-float="5.5">
+          <div class="stat-emoji">👷</div>
+          <div class="stat-num"><span class="counter">0</span>.5M</div>
+          <div class="stat-name">trabajan ilegalmente</div>
+          <div class="stat-detail">en lugar de estudiar</div>
+        </div>
+        <div class="stat-card urgent" data-count="33" data-suffix="%">
+          <div class="stat-emoji">🏠</div>
+          <div class="stat-num"><span class="counter">0</span>%</div>
+          <div class="stat-name">en vivienda precaria</div>
+          <div class="stat-detail">sin saneamiento ni electricidad</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="section section-dark" id="skills">
+  <!-- GRÁFICO POR PAÍSES -->
+  <section class="section section-dark" id="paises">
     <div class="container">
-      <span class="section-tag">Skills</span>
-      <h2 class="section-title">Womit ich arbeite</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3>Frontend</h3>
-          <ul><li>React / Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Framer Motion</li></ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0-4 4H8l-4-4h16Z"/></svg>
-          </div>
-          <h3>Backend</h3>
-          <ul><li>Node.js / Express</li><li>Python / FastAPI</li><li>PostgreSQL</li><li>Redis</li></ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3>DevOps</h3>
-          <ul><li>Docker / Kubernetes</li><li>GitHub Actions</li><li>AWS / Vercel</li><li>Terraform</li></ul>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-          </div>
-          <h3>Design</h3>
-          <ul><li>Figma</li><li>UI/UX Design</li><li>Design Systems</li><li>Accessibility</li></ul>
+      <span class="tag">Por País</span>
+      <h2 class="section-title">¿Dónde es Más Grave?</h2>
+      <p class="section-desc">Porcentaje de niños en pobreza multidimensional por país (CEPAL 2023). Incluye carencias en educación, salud, vivienda, agua y saneamiento.</p>
+      <div class="chart-container">
+        <div class="bar-chart" id="barChart"></div>
+        <div class="chart-legend">
+          <div class="legend-item"><span class="ldot" style="background:#ef4444"></span>Crítico (&gt;50%)</div>
+          <div class="legend-item"><span class="ldot" style="background:#f59e0b"></span>Alto (30–50%)</div>
+          <div class="legend-item"><span class="ldot" style="background:#3b82f6"></span>Medio (15–30%)</div>
+          <div class="legend-item"><span class="ldot" style="background:#10b981"></span>Bajo (&lt;15%)</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
+  <!-- PROGRAMAS DE GOBIERNO -->
+  <section class="section" id="gobiernos">
     <div class="container">
-      <span class="section-tag">Projekte</span>
-      <h2 class="section-title">Ausgewählte Arbeiten</h2>
-      <div class="projects-grid">
-        <article class="project-card project-featured">
-          <div class="project-image" style="--color: #6366f1">
-            <div class="project-mockup">
-              <div class="mockup-bar"></div>
-              <div class="mockup-content">
-                <div class="mockup-line w80"></div>
-                <div class="mockup-line w60"></div>
-                <div class="mockup-line w70"></div>
-              </div>
-            </div>
+      <span class="tag">Gobiernos en Acción</span>
+      <h2 class="section-title">Programas que Cambian Vidas</h2>
+      <p class="section-desc">Los principales programas sociales de la región han demostrado que es posible reducir la pobreza infantil con políticas bien diseñadas y recursos suficientes.</p>
+      <div class="programs-grid">
+
+        <article class="program-card">
+          <div class="prog-header">
+            <span class="prog-flag">🇧🇷</span>
+            <div class="prog-badge green">+21M familias</div>
           </div>
-          <div class="project-info">
-            <div class="project-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
-            <h3>TaskFlow – Projekt-Management App</h3>
-            <p>Eine vollständige SaaS-Anwendung für Team-Produktivität mit Echtzeit-Kollaboration, Kanban-Boards und Zeit-Tracking.</p>
-            <div class="project-links">
-              <a href="#" class="link-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live Demo
-              </a>
-              <a href="#" class="link-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                GitHub
-              </a>
-            </div>
+          <h3>Bolsa Família</h3>
+          <p class="prog-country">Brasil · desde 2003</p>
+          <p class="prog-desc">El mayor programa de transferencia condicionada del mundo. Las familias reciben apoyo económico mensual a cambio de que sus hijos asistan a la escuela y sean vacunados regularmente.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>50%</strong><span>reducción pobreza extrema</span></div>
+            <div class="ps-item"><strong>21M</strong><span>familias beneficiadas</span></div>
           </div>
+          <div class="prog-tag">Transferencia Condicionada</div>
         </article>
 
-        <article class="project-card">
-          <div class="project-image" style="--color: #10b981">
-            <div class="project-mockup">
-              <div class="mockup-bar"></div>
-              <div class="mockup-content">
-                <div class="mockup-line w90"></div>
-                <div class="mockup-line w50"></div>
-              </div>
-            </div>
+        <article class="program-card">
+          <div class="prog-header">
+            <span class="prog-flag">🇲🇽</span>
+            <div class="prog-badge blue">+10M becas</div>
           </div>
-          <div class="project-info">
-            <div class="project-tags"><span>Next.js</span><span>Stripe</span></div>
-            <h3>ShopWave E-Commerce</h3>
-            <p>Moderner Online-Shop mit KI-gesteuerter Produktempfehlung und nahtlosem Checkout-Flow.</p>
-            <div class="project-links">
-              <a href="#" class="link-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live Demo
-              </a>
-            </div>
+          <h3>Bienestar / Sembrando Vida</h3>
+          <p class="prog-country">México · desde 2019</p>
+          <p class="prog-desc">Sistema de bienestar integral que incluye becas educativas para todos los niveles, apoyo alimentario y servicios de salud para familias en situación de vulnerabilidad.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>10M</strong><span>becas estudiantiles</span></div>
+            <div class="ps-item"><strong>25%</strong><span>menos deserción escolar</span></div>
           </div>
+          <div class="prog-tag">Educación + Salud</div>
         </article>
 
-        <article class="project-card">
-          <div class="project-image" style="--color: #f59e0b">
-            <div class="project-mockup">
-              <div class="mockup-bar"></div>
-              <div class="mockup-content">
-                <div class="mockup-line w70"></div>
-                <div class="mockup-line w85"></div>
-              </div>
-            </div>
+        <article class="program-card featured">
+          <div class="featured-badge">⭐ Modelo Regional</div>
+          <div class="prog-header">
+            <span class="prog-flag">🇨🇱</span>
+            <div class="prog-badge green">Reconocido OMS</div>
           </div>
-          <div class="project-info">
-            <div class="project-tags"><span>Python</span><span>FastAPI</span></div>
-            <h3>DataViz Dashboard</h3>
-            <p>Analytics-Dashboard zur Visualisierung großer Datensätze mit interaktiven Charts und Export-Funktion.</p>
-            <div class="project-links">
-              <a href="#" class="link-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                GitHub
-              </a>
-            </div>
+          <h3>Chile Crece Contigo</h3>
+          <p class="prog-country">Chile · desde 2007</p>
+          <p class="prog-desc">Sistema de protección integral a la primera infancia. Acompaña el desarrollo de cada niño desde la gestación hasta los 9 años con atención médica, estimulación temprana y apoyo familiar.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>40%</strong><span>menos mortalidad infantil</span></div>
+            <div class="ps-item"><strong>100%</strong><span>cobertura gratuita</span></div>
           </div>
+          <div class="prog-tag">Primera Infancia</div>
         </article>
+
+        <article class="program-card">
+          <div class="prog-header">
+            <span class="prog-flag">🇨🇴</span>
+            <div class="prog-badge blue">+2.5M familias</div>
+          </div>
+          <h3>Familias en Acción</h3>
+          <p class="prog-country">Colombia · desde 2000</p>
+          <p class="prog-desc">Subsidios condicionados a la asistencia escolar y controles de salud. Ha demostrado aumentar significativamente la matrícula escolar en zonas rurales y comunidades indígenas.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>+15%</strong><span>asistencia escolar</span></div>
+            <div class="ps-item"><strong>2.5M</strong><span>familias inscritas</span></div>
+          </div>
+          <div class="prog-tag">Transferencia Condicionada</div>
+        </article>
+
+        <article class="program-card">
+          <div class="prog-header">
+            <span class="prog-flag">🇵🇪</span>
+            <div class="prog-badge">+700K familias</div>
+          </div>
+          <h3>Programa Juntos</h3>
+          <p class="prog-country">Perú · desde 2005</p>
+          <p class="prog-desc">Llega a las comunidades más remotas de los Andes y la Amazonía, donde la pobreza es más profunda. Combina apoyo económico con acompañamiento comunitario y formación de madres líderes.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>60%</strong><span>en zonas rurales</span></div>
+            <div class="ps-item"><strong>30%</strong><span>menos desnutrición</span></div>
+          </div>
+          <div class="prog-tag">Comunidades Remotas</div>
+        </article>
+
+        <article class="program-card">
+          <div class="prog-header">
+            <span class="prog-flag">🇦🇷</span>
+            <div class="prog-badge green">+4M niños</div>
+          </div>
+          <h3>Asignación Universal por Hijo</h3>
+          <p class="prog-country">Argentina · desde 2009</p>
+          <p class="prog-desc">Prestación económica mensual por hijo para familias desempleadas o en economía informal. Condicionada a escolarización, vacunación y controles pediátricos regulares.</p>
+          <div class="prog-stats">
+            <div class="ps-item"><strong>30%</strong><span>menos pobreza infantil</span></div>
+            <div class="ps-item"><strong>4M+</strong><span>niños cubiertos</span></div>
+          </div>
+          <div class="prog-tag">Seguridad Social</div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section section-dark" id="contact">
+  <!-- JUEGO DE MEMORIA -->
+  <section class="section section-dark" id="juego">
     <div class="container">
-      <span class="section-tag">Kontakt</span>
-      <h2 class="section-title">Lass uns reden</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>Du hast ein Projekt im Sinn oder möchtest einfach Hallo sagen? Ich freue mich von dir zu hören!</p>
-          <div class="contact-links">
-            <a class="contact-item" href="mailto:alex@example.com">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              alex@example.com
-            </a>
-            <a class="contact-item" href="https://linkedin.com" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              LinkedIn
-            </a>
-            <a class="contact-item" href="https://github.com" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              GitHub
-            </a>
+      <span class="tag">Aprende Jugando</span>
+      <h2 class="section-title">🎮 Emojis &amp; Datos Reales</h2>
+      <p class="section-desc">Encuentra los pares entre emojis y datos impactantes sobre la pobreza infantil. ¡Cada par que encuentres te revela un hecho real de América Latina!</p>
+      <div class="game-bar">
+        <div class="game-metric">Pares: <strong id="pairsFound">0</strong> / 8</div>
+        <div class="game-metric">Intentos: <strong id="movesCount">0</strong></div>
+        <button class="btn btn-ghost btn-sm" id="resetGame">🔄 Reiniciar</button>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="game-complete" id="gameComplete" hidden>
+        <div class="gc-inner">
+          <div class="gc-emoji">🎉</div>
+          <h3>¡Felicidades!</h3>
+          <p>Completaste el juego en <strong id="finalMoves">0</strong> intentos.</p>
+          <p>Ahora conoces 8 datos cruciales sobre la pobreza infantil en América Latina. ¡Comparte lo que aprendiste!</p>
+          <button class="btn btn-primary" id="playAgain">Jugar de Nuevo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CICLO DE LA POBREZA -->
+  <section class="section" id="ciclo">
+    <div class="container">
+      <span class="tag">Infografía</span>
+      <h2 class="section-title">El Ciclo de la Pobreza</h2>
+      <p class="section-desc">La pobreza infantil se perpetúa a través de un ciclo difícil de romper. Cada eslabón refuerza al siguiente — por eso las intervenciones tempranas son tan decisivas.</p>
+
+      <div class="cycle-flow">
+        <div class="cycle-top-row">
+          <div class="cf-step">
+            <div class="cf-icon">🍽️</div>
+            <strong>Desnutrición</strong>
+            <p>7 millones de niños con retraso en el crecimiento físico</p>
+          </div>
+          <div class="cf-arrow-h">→</div>
+          <div class="cf-step">
+            <div class="cf-icon">🧠</div>
+            <strong>Daño Cognitivo</strong>
+            <p>Dificultades de aprendizaje permanentes e irreversibles</p>
+          </div>
+          <div class="cf-arrow-h">→</div>
+          <div class="cf-step">
+            <div class="cf-icon">🏫</div>
+            <strong>Abandono Escolar</strong>
+            <p>4 millones de niños fuera del sistema educativo</p>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Dein Name" required />
+        <div class="cf-down-row">↓</div>
+        <div class="cycle-bottom-row">
+          <div class="cf-step">
+            <div class="cf-icon">🔁</div>
+            <strong>Pobreza Heredada</strong>
+            <p>Sus propios hijos nacerán también en pobreza</p>
           </div>
-          <div class="form-group">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" placeholder="deine@email.de" required />
+          <div class="cf-arrow-h">←</div>
+          <div class="cf-step">
+            <div class="cf-icon">📉</div>
+            <strong>Sin Oportunidades</strong>
+            <p>Empleos precarios e ingresos mínimos en la adultez</p>
           </div>
-          <div class="form-group">
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="message" rows="5" placeholder="Erzähl mir von deinem Projekt..." required></textarea>
+          <div class="cf-arrow-h">←</div>
+          <div class="cf-step">
+            <div class="cf-icon">👷</div>
+            <strong>Trabajo Infantil</strong>
+            <p>5.5 millones de niños trabajan en lugar de estudiar</p>
           </div>
-          <button class="btn btn-primary" type="submit">Nachricht senden</button>
-          <p class="form-success" id="formSuccess" hidden>Danke! Ich melde mich bald bei dir.</p>
-        </form>
+        </div>
+        <div class="cf-break-note">↺ El ciclo se repite generación tras generación</div>
+      </div>
+
+      <!-- CAUSAS vs SOLUCIONES -->
+      <div class="compare-section">
+        <div class="compare-col causes-col">
+          <h3>⚠️ Principales Causas</h3>
+          <ul>
+            <li>
+              <span class="ci">💰</span>
+              <div><strong>Desigualdad del ingreso</strong><p>América Latina es la región más desigual del mundo</p></div>
+            </li>
+            <li>
+              <span class="ci">🏥</span>
+              <div><strong>Falta de servicios básicos</strong><p>Millones sin salud, agua ni saneamiento</p></div>
+            </li>
+            <li>
+              <span class="ci">🌍</span>
+              <div><strong>Discriminación étnica</strong><p>Niños indígenas tienen 3x más probabilidad de vivir en pobreza</p></div>
+            </li>
+            <li>
+              <span class="ci">🌪️</span>
+              <div><strong>Cambio climático</strong><p>Desastres naturales empujan familias vulnerables aún más abajo</p></div>
+            </li>
+            <li>
+              <span class="ci">⚔️</span>
+              <div><strong>Conflictos y desplazamiento</strong><p>Millones de niños migrantes sin protección social</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="compare-col solutions-col">
+          <h3>✅ Soluciones Probadas</h3>
+          <ul>
+            <li>
+              <span class="ci">💸</span>
+              <div><strong>Transferencias condicionadas</strong><p>Ingresos directos a las familias + compromiso educativo</p></div>
+            </li>
+            <li>
+              <span class="ci">🍼</span>
+              <div><strong>Primera infancia universal</strong><p>Acceso gratuito a guarderías y educación preescolar</p></div>
+            </li>
+            <li>
+              <span class="ci">🥗</span>
+              <div><strong>Programas de nutrición</strong><p>Suplementos alimentarios y apoyo materno-infantil</p></div>
+            </li>
+            <li>
+              <span class="ci">🚰</span>
+              <div><strong>Agua y saneamiento</strong><p>Inversión en infraestructura en zonas rurales y periurbanas</p></div>
+            </li>
+            <li>
+              <span class="ci">📖</span>
+              <div><strong>Educación de calidad</strong><p>Maestros capacitados y materiales en lenguas indígenas</p></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- PROGRESO -->
+  <section class="section section-dark" id="progreso">
+    <div class="container">
+      <span class="tag">Hay Esperanza</span>
+      <h2 class="section-title">El Progreso es Real</h2>
+      <p class="section-desc">A pesar de los desafíos, América Latina ha logrado avances históricos en las últimas dos décadas gracias a políticas sostenidas y voluntad política.</p>
+      <div class="progress-grid">
+
+        <div class="progress-card">
+          <div class="pc-icon">📉</div>
+          <h3>Pobreza Infantil Total</h3>
+          <div class="before-after">
+            <div class="ba-item">
+              <span class="ba-year">2000</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar" style="--w:90%; --c:#ef4444">45%</div>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-year">2023</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar animate-bar" style="--w:54%; --c:#f59e0b" data-final="54%">0%</div>
+              </div>
+            </div>
+          </div>
+          <p class="pc-note">Reducción del <strong>40%</strong> en 20 años — 30 millones de niños salieron de la pobreza</p>
+        </div>
+
+        <div class="progress-card">
+          <div class="pc-icon">🏥</div>
+          <h3>Mortalidad Infantil</h3>
+          <div class="before-after">
+            <div class="ba-item">
+              <span class="ba-year">2000</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar" style="--w:76%; --c:#ef4444">38/1000</div>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-year">2023</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar animate-bar" style="--w:30%; --c:#10b981" data-final="30%">0%</div>
+              </div>
+            </div>
+          </div>
+          <p class="pc-note">Reducción del <strong>61%</strong> — de 38 a 15 muertes por cada 1.000 nacidos vivos</p>
+        </div>
+
+        <div class="progress-card">
+          <div class="pc-icon">📖</div>
+          <h3>Escolarización Primaria</h3>
+          <div class="before-after">
+            <div class="ba-item">
+              <span class="ba-year">2000</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar" style="--w:71%; --c:#f59e0b">71%</div>
+              </div>
+            </div>
+            <div class="ba-item">
+              <span class="ba-year">2023</span>
+              <div class="ba-bar-wrap">
+                <div class="ba-bar animate-bar" style="--w:91%; --c:#10b981" data-final="91%">0%</div>
+              </div>
+            </div>
+          </div>
+          <p class="pc-note">La matrícula escolar subió al <strong>91%</strong> — un récord histórico para la región</p>
+        </div>
+
+      </div>
+
+      <div class="hope-banner">
+        <div class="hb-left">
+          <h3>¿Qué puedes hacer tú?</h3>
+          <p>El cambio comienza con el conocimiento. Organizaciones como UNICEF, Save the Children y Aldeas Infantiles SOS trabajan directamente en comunidades de toda América Latina.</p>
+        </div>
+        <div class="hb-orgs">
+          <div class="org-chip">🌐 UNICEF</div>
+          <div class="org-chip">❤️ Save the Children</div>
+          <div class="org-chip">🏘️ Aldeas Infantiles SOS</div>
+          <div class="org-chip">🌱 CEPAL</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Alex Müller · Mit ♥ gebaut</p>
-      <p class="footer-sub">Alle Inhalte sind Platzhalter — passe sie nach Belieben an.</p>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo">🌎 Pobreza Infantil AL</p>
+          <p>Centro de información educativo sobre la pobreza infantil en América Latina. Contenido basado en datos de organismos internacionales.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Fuentes de Datos</p>
+          <ul>
+            <li>UNICEF – América Latina y el Caribe</li>
+            <li>CEPAL – Comisión Económica para AL</li>
+            <li>Banco Mundial – Datos Abiertos</li>
+            <li>OIT – Organización Internacional del Trabajo</li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Sobre este sitio</p>
+          <p>Creado con fines educativos. Los datos corresponden al período 2022–2024. Este sitio no tiene fines comerciales ni afiliación política.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Datos 2023–2024 · UNICEF, CEPAL, Banco Mundial, OIT · Contenido educativo sin fines de lucro</p>
+      </div>
     </div>
   </footer>
 

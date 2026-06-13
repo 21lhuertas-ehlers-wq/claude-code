@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>GLUT — Wo Feuer zur Kunst wird</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">GLUT</span>
+      <a class="nav-cta" href="#reservieren">Tisch reservieren</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="embers" id="embers"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content" id="heroContent">
+      <p class="hero-eyebrow">Restaurant &amp; Feuerküche</p>
+      <h1 class="hero-title">GLUT</h1>
+      <p class="hero-tagline">Wo Feuer zur Kunst wird.</p>
+    </div>
+    <div class="scroll-cue">
+      <span>Scrollen</span>
+      <div class="scroll-cue-line"><div class="scroll-cue-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- MANIFEST -->
+  <section class="pin manifest-pin" id="manifest">
+    <div class="pin-inner">
+      <p class="manifest-text" id="manifestText"></p>
+    </div>
+  </section>
+
+  <!-- DISH 1 -->
+  <section class="pin dish-pin" id="dish1">
+    <div class="pin-inner dish-inner">
+      <div class="dish-plate-wrap">
+        <div class="dish-plate">🥩</div>
+        <div class="dish-ing ing-a">🔥</div>
+        <div class="dish-ing ing-b">🌿</div>
+        <div class="dish-ing ing-c">🧈</div>
+        <div class="dish-ing ing-d">🧂</div>
+      </div>
+      <div class="dish-info">
+        <span class="dish-num">01 — Hauptgang</span>
+        <h2>Tomahawk vom Feuer</h2>
+        <p>45 Tage trocken gereiftes Rind, über offener Eichenglut gegrillt und vollendet mit brauner Butter, frischem Rosmarin und grobem Meersalz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISH 2 -->
+  <section class="pin dish-pin" id="dish2">
+    <div class="pin-inner dish-inner">
+      <div class="dish-info">
+        <span class="dish-num">02 — Vorspeise</span>
+        <h2>Pulpo a la Brasa</h2>
+        <p>Spanischer Oktopus, stundenlang sanft gegart und scharf angegrillt, serviert mit Paprika-Aioli, geröstetem Knoblauch und Kapern.</p>
+      </div>
+      <div class="dish-plate-wrap">
+        <div class="dish-plate">🐙</div>
+        <div class="dish-ing ing-a">🍋</div>
+        <div class="dish-ing ing-b">🌶️</div>
+        <div class="dish-ing ing-c">🫒</div>
+        <div class="dish-ing ing-d">🧄</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISH 3 -->
+  <section class="pin dish-pin" id="dish3">
+    <div class="pin-inner dish-inner">
+      <div class="dish-plate-wrap">
+        <div class="dish-plate">🍫</div>
+        <div class="dish-ing ing-a">🔥</div>
+        <div class="dish-ing ing-b">🍓</div>
+        <div class="dish-ing ing-c">✨</div>
+        <div class="dish-ing ing-d">🌰</div>
+      </div>
+      <div class="dish-info">
+        <span class="dish-num">03 — Dessert</span>
+        <h2>Schokolade &amp; Feuer</h2>
+        <p>72% Single-Origin-Schokolade, direkt am Tisch flambiert, mit Meersalz, Walderdbeeren und Haselnusskrokant vollendet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="pin gallery-pin" id="gallery">
+    <div class="pin-inner gallery-inner">
+      <div class="gallery-head">
+        <span class="tag">Eindrücke</span>
+        <h2>Momente bei GLUT</h2>
+      </div>
+      <div class="gallery-track" id="galleryTrack">
+        <article class="gallery-card" style="--c1:#ff6b35; --c2:#2a0f06;">
+          <div class="gc-emoji">🔥</div>
+          <h3>Der Ofen</h3>
+          <p>Seit 2015 brennt derselbe Eichenholzofen im Herzen unserer Küche.</p>
+        </article>
+        <article class="gallery-card" style="--c1:#ffaa00; --c2:#2a1c06;">
+          <div class="gc-emoji">👨‍🍳</div>
+          <h3>Die Küche</h3>
+          <p>Offen einsehbar — jeder Schnitt wird zur Choreografie.</p>
+        </article>
+        <article class="gallery-card" style="--c1:#d4af37; --c2:#221c06;">
+          <div class="gc-emoji">🍷</div>
+          <h3>Der Weinkeller</h3>
+          <p>Über 400 Etiketten aus Lateinamerika und Europa.</p>
+        </article>
+        <article class="gallery-card" style="--c1:#ff3d00; --c2:#2a0a06;">
+          <div class="gc-emoji">⭐</div>
+          <h3>Chef's Table</h3>
+          <p>Acht Plätze direkt am Feuer — das intensivste Erlebnis im Haus.</p>
+        </article>
+        <article class="gallery-card" style="--c1:#ff8c42; --c2:#2a1606;">
+          <div class="gc-emoji">🌆</div>
+          <h3>Die Terrasse</h3>
+          <p>Dinieren unter freiem Himmel mit Blick über die Dächer.</p>
+        </article>
+        <article class="gallery-card" style="--c1:#ffd166; --c2:#2a2106;">
+          <div class="gc-emoji">🍸</div>
+          <h3>Die Bar</h3>
+          <p>Cocktails mit hausgemachten Rauch-Infusionen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block">
+          <div class="stat-num"><span class="counter" data-count="9">0</span></div>
+          <div class="stat-label">Jahre am Feuer</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span class="counter" data-count="42">0</span></div>
+          <div class="stat-label">Gerichte vom offenen Feuer</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span class="counter" data-count="400">0</span>+</div>
+          <div class="stat-label">Weine im Keller</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span class="counter" data-count="12">0</span>k+</div>
+          <div class="stat-label">Gäste pro Jahr</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <span class="tag">Auswahl</span>
+      <h2 class="section-title">Von der Karte</h2>
+      <div class="menu-grid">
+        <div class="menu-card"><div class="mc-top"><span>🥩</span><strong>89€</strong></div><h3>Tomahawk Steak</h3><p>1 kg, Dry-Aged, über Eiche gegrillt</p></div>
+        <div class="menu-card"><div class="mc-top"><span>🐙</span><strong>32€</strong></div><h3>Pulpo a la Brasa</h3><p>Mit Paprika-Aioli &amp; Kapern</p></div>
+        <div class="menu-card"><div class="mc-top"><span>🥃</span><strong>28€</strong></div><h3>Wagyu Tatar</h3><p>Mit geräuchertem Eigelb</p></div>
+        <div class="menu-card"><div class="mc-top"><span>🍚</span><strong>24€</strong></div><h3>Risotto al Nero</h3><p>Tintenfischtinte &amp; gegrillte Garnele</p></div>
+        <div class="menu-card"><div class="mc-top"><span>🍫</span><strong>16€</strong></div><h3>Flambierte Schokolade</h3><p>Tableside-Flambé mit Meersalz</p></div>
+        <div class="menu-card"><div class="mc-top"><span>🍸</span><strong>14€</strong></div><h3>Rauch Old Fashioned</h3><p>Hausgemachte Rauch-Infusion</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="section reservation-section" id="reservieren">
+    <div class="container reservation-inner">
+      <span class="tag">Reservierung</span>
+      <h2 class="section-title">Sichern Sie sich<br>Ihren Platz am Feuer</h2>
+      <p class="section-desc">Tisch für 2 oder Chef's Table für 8 — wir freuen uns auf Sie.</p>
+      <a class="btn btn-glow" href="mailto:reservierung@glut-restaurant.de">Jetzt reservieren</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">GLUT</p>
+        <p>Musterstraße 12<br>10115 Berlin</p>
+      </div>
+      <div>
+        <p class="footer-heading">Öffnungszeiten</p>
+        <p>Di – So: 18:00 – 24:00 Uhr<br>Montag Ruhetag</p>
+      </div>
+      <div>
+        <p class="footer-heading">Kontakt</p>
+        <p>+49 30 1234 5678<br>info@glut-restaurant.de</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 GLUT — Alle Inhalte sind Platzhalter für diese Demo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
